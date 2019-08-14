@@ -18,7 +18,9 @@ permalink: /registration/new/
       <p>⬆ We won't send emails to your university email address; we only need it to make sure you don't end up on our mailing list twice.</p>
       <p>⬆ If you are a fresher and don't have a university email address yet, you can leave this blank.</p>
     </div>
-    <label><input type="checkbox" name="consent" data-action="input->newsletter#validate" data-target="newsletter.consent"> I agree to receive email notifications from FilmSoc about upcoming films, events and FilmSoc news.</label>
+    <label>Mobile number: <input type="text" name="mobile" placeholder="07300112000" data-action="blur->newsletter#validate"></label>
+    <p>⬆ Enter your mobile number if you'd like us to text you about big events. We will only do this every once in a while.</p>
+    <label><input type="checkbox" name="consent" data-action="input->newsletter#validate" data-target="newsletter.consent"> I agree to receive notifications from FilmSoc about upcoming films, events and FilmSoc news.</label>
     <button disabled data-target="newsletter.submit">Submit</button>
   </form>
 </div>
