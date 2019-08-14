@@ -1,0 +1,62 @@
+input[type=text] {
+  font-size: 18px;
+  background-color: $near-white;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  padding: 8px;
+  width: 300px;
+}
+
+input[type=text]:focus {
+  filter: drop-shadow(0 0 3px rgba(white, 0.75));
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  margin: 5px 10px 10px 0;
+  float: left;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+label + p, label + p + p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  opacity: 0.6;
+}
+
+label input {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $neon-blue-dark;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 3px;
+  margin: 25px 0;
+  color: black;
+}
+
+button:hover {
+  background-color: $neon-blue-bright;
+  cursor: pointer;
+}
+
+button[disabled] {
+  background-color: hsl(0,0,50);
+}
+
+button[disabled]:hover {
+  background-color: hsl(0,0,50);
+  cursor: not-allowed;
+}
