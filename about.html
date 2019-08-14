@@ -1,0 +1,56 @@
+---
+layout: default
+title: About FilmSoc
+permalink: /about/
+---
+<div class="page-intro">
+  <p>The University of Surrey Film Society was founded in 2017 by Surrey students Reuben HM, Zander Archer, Alex Watts and George Hudson-Chang.</p>
+  <p>Since then, we've held 84 different events including film screenings, midnight openings and social events like bar crawls. We hope you'll join us at our next event!</p>
+</div>
+
+<section class="narrow-content">
+  <h2>Mission</h2>
+  <p>To inspire in others an appreciation of film not only as a mechanism for storytelling, but also as a way to connect with the characters on the screen—fictional or otherwise—over our shared emotions, aspirations and circumstances to discover an affinity to those who are different from us, to hold up a mirror to our own shortcomings, or to inspire us to achieve that which, at times, may seem just out of our reach.</p>
+</section>
+
+<section class="committee">
+  <h2>Committee</h2>
+  <figure class="committee_member">
+    <img src="{{ site.data.committee.president.image }}" alt="{{ site.data.committee.president.name }}">
+    <figcaption>
+      <div class="committee_member-name">{{ site.data.committee.president.name }}</div>
+      <div class="committee_member-position">President</div>
+    </figcaption>
+  </figure>
+  <figure class="committee_member">
+    <img src="{{ site.data.committee.vice-president.image }}" alt="{{ site.data.committee.vice-president.name }}">
+    <figcaption>
+      <div class="committee_member-name">{{ site.data.committee.vice-president.name }}</div>
+      <div class="committee_member-position">Vice President</div>
+    </figcaption>
+  </figure>
+  <figure class="committee_member">
+    <img src="{{ site.data.committee.treasurer.image }}" alt="{{ site.data.committee.treasurer.name }}">
+    <figcaption>
+      <div class="committee_member-name">{{ site.data.committee.treasurer.name }}</div>
+      <div class="committee_member-position">Treasurer</div>
+    </figcaption>
+  </figure>
+  <figure class="committee_member">
+    <img src="{{ site.data.committee.social-secretary.image }}" alt="{{ site.data.committee.social-secretary.name }}">
+    <figcaption>
+      <div class="committee_member-name">{{ site.data.committee.social-secretary.name }}</div>
+      <div class="committee_member-position">Social Secretary</div>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="faqs">
+  <h2>FAQs</h2>
+  {% for faq in site.data.faqs %}
+    <details>
+      <summary>{{ faq.question }}</summary>
+      {{ faq.answer }}
+    </details>
+  {% endfor %}
+</section>

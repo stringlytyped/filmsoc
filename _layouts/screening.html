@@ -1,0 +1,67 @@
+---
+layout: common
+---
+
+<article class="screening">
+  <h2>Film details</h2>
+  <header>
+    <img class="screening_backdrop" src="{{ page.backdrop }}" alt="">
+    <div class="screening_foreground">
+      <img class="screening_poster" src="{{ page.poster }}" alt="{{ page.title }} poster">
+      <div class="screening_info">
+        <h1 class="screening_title">{{ page.title }} <span class="screening_year">({{ page.year }})</span></h1>
+        <ul class="screening_genre">
+          {% for genre in page.genres %}
+            <li>{{ genre }}</li>
+          {% endfor %}
+        </ul>
+        <p class="screening_overview">
+          {{ page.overview }}
+        </p>
+        <div class="screening_trailer-link">
+          <a href="{{ page.trailer }}" target="_blank">Watch trailer</a>
+        </div>
+        <dl class="screening_details">
+          <div>
+            <dt>Director</dt>
+            <dd>{{ page.director }}</dd>
+          </div>
+          <div>
+            <dt>Cast</dt>
+            <dd>
+              <ul>
+                {% for cast_member in page.cast %}
+                  <li>{{ cast_member }}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Runtime</dt>
+            <dd>{{ page.runtime }}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </header>
+  <h2>Screening details</h2>
+  <footer>
+    <div>
+      <p>
+        <span class="screening_event-label">Date:</span>
+        <span class="screening_event-info">{{ page.date | date: "%a, %e %b %Y"  }}</span>
+      </p>
+      <p>
+          <span class="screening_event-label">Time:</span>
+          <span class="screening_event-info">{{ page.date | date: "%l:%M %p"  }}</span>
+        </p>
+      <p>
+        <span class="screening_event-label">Location:</span>
+        <span class="screening_event-info">{{ page.location }}</span>
+      </p>
+    </div>
+    <div>
+      <p>The film will start promptly at the time shown, so please ensure that you arrive 10 minutes prior.</p>
+    </div>
+  </footer>
+</article>

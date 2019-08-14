@@ -1,0 +1,14 @@
+.faqs {
+  font-size: 18px;
+  line-height: 1.35;
+  max-width: 700px;
+
+  summary {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+
+  summary:hover {
+    cursor: pointer;
+  }
+}

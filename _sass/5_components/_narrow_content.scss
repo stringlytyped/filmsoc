@@ -1,0 +1,9 @@
+.narrow-content {
+  max-width: 600px;
+
+  &.-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

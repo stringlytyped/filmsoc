@@ -1,0 +1,30 @@
+.home-intro {
+  line-height: 1.42;
+  position: relative;
+  z-index: 1;
+  
+p {
+  font-size: 24px;
+}
+
+  @include respond-to("mobile-up") {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include respond-to("tablet-up") {
+    max-width: none;
+    margin: 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+
+    p:last-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+    }
+  }
+}

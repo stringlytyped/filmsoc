@@ -1,0 +1,132 @@
+.home-hero {
+  width: 100%;
+  font-weight: normal;
+  position: relative;
+  z-index: 0;
+  margin-top: -200px;
+  margin-bottom: -200px;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: url('/assets/img/spotlight.png') center/986px no-repeat;
+    opacity: 0;
+    animation: spotlight 2s ease 1s infinite alternate;
+  }
+
+  @keyframes spotlight {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  span {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  span:nth-child(2) {
+    display: inline-block;
+    background-color: #24A2AA;
+    padding: 8px 20px 12px 20px;
+  }
+
+  @include respond-to("mobile-up") {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 210px;
+    height: 460px;
+
+    span {
+      transition: all 0.5s ease 1s;
+    }
+
+    span:first-child, span:last-child {
+      padding: 15px 0;
+    }
+
+    &.-hidden span:first-child {
+      transform: translateY(-300px);
+      opacity: 0;
+      transition: none;
+    }
+
+    &.-hidden span:nth-child(2) {
+      opacity: 0;
+      transition: none;
+    }
+
+    &.-hidden span:last-child {
+      transform: translateY(300px);
+      opacity: 0;
+      transition: none;
+    }
+  }
+
+  @media screen and (min-width: 340px) {
+    font-size: 42px;
+  }
+
+  @include respond-to("tablet-up") {
+    text-align: left;
+    padding-top: 0;
+    height: 670px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+
+    span {
+      transition: all 0.5s ease 1s;
+    }
+
+    span:first-child {
+      padding: 8px 25px 12px 0;
+
+      align-self: end;
+      justify-self: end;
+    }
+
+    span:nth-child(2) {
+      align-self: end;
+      justify-self: start;
+    }
+
+    span:last-child {
+      padding: 0;
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    &.-hidden span:first-child {
+      transform: translateX(-300px);
+      opacity: 0;
+      transition: none;
+    }
+
+    &.-hidden span:nth-child(2) {
+      transform: translateY(-300px);
+      opacity: 0;
+      transition: none;
+    }
+
+    &.-hidden span:last-child {
+      transform: translateX(300px);
+      opacity: 0;
+      transition: none;
+    }
+  }
+}

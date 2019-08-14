@@ -1,0 +1,45 @@
+---
+layout: default
+title: Screenings
+permalink: /screenings/
+---
+
+<div class="screenings">
+{% for screening in site.screenings %}
+  {% capture nowunix %}{{ site.time | date: '%s' }}{% endcapture %}
+  {% capture screeningunix %}{{ screening.date | date: '%s' }}{% endcapture %}
+  {% if screeningunix >= nowunix %}
+    <article class="film-box">
+      <a href="{{ screening.url }}">
+        <header>
+          <div class="film-box_keyinfo">
+            <h3 class="film-box_title">{{ screening.title }}</h3>
+            <div class="film-box_date">{{ screening.date | date: "%a, %e %b @ %l:%M %p"  }}</div>
+          </div>
+          <img class="film-box_backdrop" src="{{ screening.backdrop }}" alt="">
+        </header>
+        <div class="film-box_details">
+          <ul class="film-box_genre">
+            {% for genre in screening.genres %}
+              <li>{{ genre }}</li>
+            {% endfor %}
+          </ul>
+          <dl class="film-box_credits">
+            <dt>Director</dt>
+            <dd>{{ screening.director }}</dd>
+            
+            <dt>Cast</dt>
+            <dd>
+              <ul>
+                {% for cast_member in screening.cast %}
+                  <li>{{ cast_member }}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </a>
+    </article>
+  {% endif %}
+{% endfor %}
+</div>

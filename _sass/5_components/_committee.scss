@@ -1,0 +1,46 @@
+.committee {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding-bottom: 18px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    font-size: 18px;
+    line-height: 1.35;
+    margin-top: 15px;
+  }
+
+  &_member-name {
+    font-weight: bold;
+  }
+
+  @include respond-to("mobile-up") {
+    grid-template-columns: 1fr 1fr;
+
+    h2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  @include respond-to("tablet-up") {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    h2 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+  }
+}

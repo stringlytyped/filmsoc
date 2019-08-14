@@ -1,0 +1,18 @@
+{
+  "name": "filmsoc-site",
+  "version": "1.0.0",
+  "license": "All rights reserved",
+  "private": true,
+  "dependencies": {
+    "stimulus": "^1.1.1",
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}

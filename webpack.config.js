@@ -1,0 +1,25 @@
+const path = require('path');
+
+module.exports = {
+  mode: 'production',
+  entry: './scripts/app.js',
+  output: {
+    path: path.resolve(__dirname, 'assets/js'),
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-class-properties']
+          }
+        }
+      }
+    ]
+  }
+};

@@ -1,0 +1,13 @@
+.site-wrapper {
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @include respond-to("mobile-up") {
+    padding: 15px;
+  }
+
+  @include respond-to("small-tablet-up") {
+    padding: 30px;
+  }
+}

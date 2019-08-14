@@ -1,0 +1,44 @@
+.home-films {
+  margin-top: 80px;
+  display: grid;
+
+  >h2 a:link, >h2 a:visited {
+    color: $near-white;
+    text-decoration: none;
+  }
+
+  article {
+    justify-self: center;
+  }
+
+  @include respond-to("mobile-up") {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+
+    >h2 {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+
+    >h2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin-bottom: -15px;
+    }
+
+    article:nth-child(2) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &_more {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}

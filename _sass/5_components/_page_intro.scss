@@ -1,0 +1,15 @@
+.page-intro {
+  max-width: 480px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  @include respond-to("mobile-up") {
+    margin: 50px 0;
+  }
+
+  @media screen and (min-width: 340px) {
+    margin: 80px 0;
+  }
+}

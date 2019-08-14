@@ -1,0 +1,77 @@
+---
+layout: common
+title: "FilmSoc: University of Surrey Film Society"
+---
+<section>
+  <h2 class="home-hero" data-controller="hero">
+    <span>Explore the</span>
+    <span data-target="hero.adjective">exciting</span>
+    <span>world of cinema</span>
+  </h2>
+  <script>
+    document.querySelector(".home-hero").classList.add("-hidden");
+  </script>
+  <div class="home-intro">
+    <p><strong>FilmSoc</strong> is a student-run film society here to help you unearth new gems and rediscover treasured favourites.</p>
+    <p>Screenings take place <strong>twice a week</strong> on campus, and attendance and membership are completely <strong>free</strong>.</p>
+    <p><a class="button" href="/about">Learn more about FilmSoc</a></p>
+  </div>
+</section>
+
+<section class="home-films">
+  <h2><a href="/screenings">Upcoming screenings</a></h2>
+
+  {% assign count = 0 %}
+  {% for screening in site.screenings %}
+    {% capture nowunix %}{{ site.time | date: '%s' }}{% endcapture %}
+    {% capture screeningunix %}{{ screening.date | date: '%s' }}{% endcapture %}
+    {% if screeningunix >= nowunix %}
+      {% if count < 3 %}
+        {% assign count = count | plus: 1 %}
+        
+        <article class="film-box {% if count == 1 %} -large {% endif %}">
+          <a href="{{ screening.url }}">
+            <header>
+              <div class="film-box_keyinfo">
+                <h3 class="film-box_title">{{ screening.title }}</h3>
+                <div class="film-box_date">{{ screening.date | date: "%a, %e %b @ %l:%M %p"  }}</div>
+              </div>
+              <img class="film-box_backdrop" src="{{ screening.backdrop }}" alt="">
+            </header>
+            <div class="film-box_details">
+              <ul class="film-box_genre">
+                {% for genre in screening.genres %}
+                  <li>{{ genre }}</li>
+                {% endfor %}
+              </ul>
+              <p class="film-box_overview">
+                {{ screening.overview }}
+              </p>
+              <div class="film-box_moreinfo">
+                More info
+              </div>
+              <dl class="film-box_credits">
+                <dt>Director</dt>
+                <dd>{{ screening.director }}</dd>
+                
+                <dt>Cast</dt>
+                <dd>
+                  <ul>
+                    {% for cast_member in screening.cast %}
+                      <li>{{ cast_member }}</li>
+                    {% endfor %}
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="home-films_more">
+    <a class="button -large -fill" href="/screenings">See more screenings</a>
+  </div>
+</section>

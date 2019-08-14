@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  color: $near-white;
+  background-color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px 25px;
+  border-bottom: 5px solid $near-white;
+
+  &:before {
+    content: '»';
+    margin-right: 15px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $neon-blue-dark;
+    border-color: $neon-blue-dark;
+  }
+
+  &.-large {
+    font-size: 22px;
+    padding: 30px 45px;
+  }
+
+  &.-fill {
+    display: block;
+  }
+}

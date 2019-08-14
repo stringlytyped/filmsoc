@@ -1,0 +1,18 @@
+body {
+  background: url('/assets/img/bg-gradient.png') top/1px repeat-x, $bg-gradient-end-color;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   height: 800px;
+  //   z-index: 0;
+  //   background: linear-gradient(180deg, $bg-gradient-start-color 0%, $bg-gradient-end-color 100%);
+  // }
+}
