@@ -2,6 +2,10 @@
 layout: default
 title: Newsletter Signup
 ---
+<div class="page-intro">
+  <p>Fill in the short form below and we'll notify you of upcoming screenings and events!</p>
+</div>
+
 <div class="narrow-content" data-controller="newsletter">
   <form name="newsletter" method="POST" data-netlify="true">
     <label>First name: <input type="text" name="fname" placeholder="Jill" data-action="blur->newsletter#validate" data-target="newsletter.fname"></label>
