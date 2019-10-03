@@ -20,6 +20,7 @@ permalink: /registration/new/
     </div>
     <label>Mobile number: <input type="text" name="mobile" placeholder="07300112000" data-action="blur->newsletter#validate"></label>
     <p>⬆ Enter your mobile number if you'd like us to text you about big events. We will only do this every once in a while.</p>
+    <label>Favourite film: <input type="text" name="favfilm" data-action="blur->newsletter#validate" data-target="newsletter.favfilm"></label>
     <label><input type="checkbox" name="consent" data-action="input->newsletter#validate" data-target="newsletter.consent"> I agree to receive notifications from FilmSoc about upcoming films, events and FilmSoc news.</label>
     <button disabled data-target="newsletter.submit">Submit</button>
   </form>
