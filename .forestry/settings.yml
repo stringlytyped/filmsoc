@@ -17,6 +17,10 @@ sections:
 - type: document
   path: src/_data/committee.yml
   label: Committee
+- type: document
+  path: src/_data/faqs.yml
+  label: FAQs
+  match: "**/*"
 upload_dir: src/uploads
 public_path: "/uploads"
 front_matter_path: ''
