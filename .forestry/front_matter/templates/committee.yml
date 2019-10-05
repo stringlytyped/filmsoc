@@ -1,0 +1,44 @@
+---
+label: Committee
+hide_body: true
+fields:
+- type: field_group
+  name: president
+  label: president
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: vice-president
+  label: vice-president
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: treasurer
+  label: treasurer
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: social-secretary
+  label: social-secretary
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
