@@ -5,39 +5,69 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: screening
 - type: datetime
   name: date
-  label: date
+  label: Date and time
+  config:
+    display_utc: true
+    date_format: YYYY-MM-DD
+    required: true
 - type: text
   name: location
-  label: location
+  label: Location
+  config:
+    required: true
+  default: 03 MS 01
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: number
   name: year
-  label: year
+  label: Year
+  config:
+    required: true
 - type: text
   name: runtime
-  label: runtime
+  label: Runtime
+  config:
+    required: true
 - type: file
   name: backdrop
-  label: backdrop
+  label: Backdrop
 - type: file
   name: poster
-  label: poster
+  label: Poster
 - type: text
   name: trailer
-  label: trailer
+  label: Trailer (YouTube URL)
+  config:
+    required: true
 - type: textarea
   name: overview
-  label: overview
+  label: Overview
+  config:
+    required: true
+  default: ''
 - type: list
   name: genres
-  label: genres
+  label: Genres
+  config:
+    use_select: false
+    min: '1'
+    max: '3'
 - type: text
   name: director
-  label: director
+  label: Director
+  config:
+    required: true
 - type: list
   name: cast
-  label: cast
+  label: Cast
+  config:
+    use_select: false
+    min: '1'
+    max: '3'
