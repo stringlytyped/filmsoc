@@ -1,0 +1,43 @@
+---
+label: Film Screening
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: location
+  label: location
+- type: text
+  name: title
+  label: title
+- type: number
+  name: year
+  label: year
+- type: text
+  name: runtime
+  label: runtime
+- type: file
+  name: backdrop
+  label: backdrop
+- type: file
+  name: poster
+  label: poster
+- type: text
+  name: trailer
+  label: trailer
+- type: textarea
+  name: overview
+  label: overview
+- type: list
+  name: genres
+  label: genres
+- type: text
+  name: director
+  label: director
+- type: list
+  name: cast
+  label: cast
