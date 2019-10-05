@@ -19,3 +19,5 @@ fields:
       schema:
         format: html-blocks
       required: true
+pages:
+- src/_data/faqs.yml

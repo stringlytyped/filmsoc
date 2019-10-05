@@ -1,29 +1,57 @@
+---
 - question: When and where do you meet?
-  answer: 'We have screenings most Sunday and Tuesday evenings during term-time. Typically we start the film at around 7:30 PM, but we ask that you try to arrive 10 minutes prior to ensure that the film isn''t interrupted by late arrivals. Our usual venue is 03 MS 01 (the big lecture theatre in the Rik Medlik building). Please be advised that the time and venue may differ on occasion, so you should <strong>always check the event details on our website or Facebook page</strong>.'
-
+  answer: We have screenings most Sunday and Tuesday evenings during term-time. Typically
+    we start the film at around 7:30 PM, but we ask that you try to arrive 10 minutes
+    prior to ensure that the film isn't interrupted by late arrivals. Our usual venue
+    is 03 MS 01 (the big lecture theatre in the Rik Medlik building). Please be advised
+    that the time and venue may differ on occasion, so you should <strong>always check
+    the event details on our website or Facebook page</strong>.
 - question: Do I need to be a member to attend screenings?
-  answer: 'Yes, but membership is free. To become a member: ❶ go the Student''s Union <a href="https://www.ussu.co.uk/activity/Pages/GetMemberships.aspx" target="_blank">Get a Membership</a> page, ❷ select "Film Soc" from the list on the left, ❸ click the ">" button and ❹ click "Pay". (The button is labeled "Pay" but you will not be charged.)'
-
-- question: I am having trouble signing up as a member on the Students' Union website. Can you help me?
-  answer: 'Sure! Come 20 minutes early to one of our screenings and we''ll help you get signed up. You''l need your university email address (in the format <em>xx00000@surrey.ac.uk</em>) and password.'
-
+  answer: 'Yes, but membership is free. To become a member: ❶ go the Student''s Union
+    <a href="https://www.ussu.co.uk/activity/Pages/GetMemberships.aspx" target="_blank">Get
+    a Membership</a> page, ❷ select "Film Soc" from the list on the left, ❸ click
+    the ">" button and ❹ click "Pay". (The button is labeled "Pay" but you will not
+    be charged.)'
+- question: I am having trouble signing up as a member on the Students' Union website.
+    Can you help me?
+  answer: Sure! Come 20 minutes early to one of our screenings and we'll help you
+    get signed up. You'l need your university email address (in the format <em>xx00000@surrey.ac.uk</em>)
+    and password.
 - question: Do I have to be a University of Surrey student to come to a screening?
-  answer: 'As long as you are accompanied by a University of Surrey student, you are welcome to join us.'
-
+  answer: As long as you are accompanied by a University of Surrey student, you are
+    welcome to join us.
 - question: Is it okay if I use my phone or laptop during a screening?
-  answer: You are welcome to multitask, but we ask that you are seated in the back two rows if you are going to use a device with screen such a laptop, tablet or phone. This way, other viewers won't be distracted by the light from your screen. Also, please be considerate and make sure to put your devices on silent. No papers or books are permitted, however, as the rustling of paper can be distracting to others (you probably won't be able to read them anyway in the darkened lecture theatre 😉).
-
+  answer: "You are welcome to multitask, but we ask that you are seated in the back
+    two rows if you are going to use a device with screen such a laptop, tablet or
+    phone. This way, other viewers won't be distracted by the light from your screen.
+    Also, please be considerate and make sure to put your devices on silent. No papers
+    or books are permitted, however, as the rustling of paper can be distracting to
+    others (you probably won't be able to read them anyway in the darkened lecture
+    theatre \U0001F609)."
 - question: How do you decide which films to show?
-  answer: 'Our committee decides. Sometimes films are picked according to a specific theme, and sometimes they are picked in collaboration with another society. Other times we just pick films we think our members would like. If you have a suggestion on what films we could show, drop us a <a href="https://m.me/surreyfilmsoc" target="_blank">Facebook message</a>. Keep in mind however that schedules are draw up long in advance, so we won''t be able to show a specific movie on short notice. Also, there are licensing considerations that need to taken, so we may not legally be able to show your suggestion.'
-
+  answer: Our committee decides. Sometimes films are picked according to a specific
+    theme, and sometimes they are picked in collaboration with another society. Other
+    times we just pick films we think our members would like. If you have a suggestion
+    on what films we could show, drop us a <a href="https://m.me/surreyfilmsoc" target="_blank">Facebook
+    message</a>. Keep in mind however that schedules are draw up long in advance,
+    so we won't be able to show a specific movie on short notice. Also, there are
+    licensing considerations that need to taken, so we may not legally be able to
+    show your suggestion.
 - question: Who decides who can be on the committee?
-  answer: 'Committee members are elected by FilmSoc members. You can cast your vote at our Annual General Meeting (AGM) which takes place in March or April. The specific details will be posted on our Facebook page.'
-
-- question: I am on the committee of another society. Would it be possible to collaborate with FilmSoc?
-  answer: 'We''d love to work with you on an event! Send us a <a href="https://m.me/surreyfilmsoc" target="_blank">Facebook message</a> and we''ll get back to you as soon as we can.'
-
+  answer: Committee members are elected by FilmSoc members. You can cast your vote
+    at our Annual General Meeting (AGM) which takes place in March or April. The specific
+    details will be posted on our Facebook page.
+- question: I am on the committee of another society. Would it be possible to collaborate
+    with FilmSoc?
+  answer: We'd love to work with you on an event! Send us a <a href="https://m.me/surreyfilmsoc"
+    target="_blank">Facebook message</a> and we'll get back to you as soon as we can.
 - question: I have a hearing impairment. Do you show subtitles?
-  answer: Come talk to one of the committee members before the movie begins and we'll make sure subtitles are switched on, if available.
-
+  answer: Come talk to one of the committee members before the movie begins and we'll
+    make sure subtitles are switched on, if available.
 - question: Is your venue accessible?
-  answer: We usually meet in 03 MS 01 in the Rik Medlik building. There is ramp access to this lecture theatre around the back of the building. However, this door is typically locked from the outside, so we ask that you send us a <a href="https://m.me/surreyfilmsoc" target="_blank">Facebook message</a> in advance so that we can make sure to let you in. Accessibility information is available on the <a href="https://www.accessable.co.uk/venues/rik-medlik-building-block-ms#tab_11" target="_blank">AccessAble website</a>.
+  answer: We usually meet in 03 MS 01 in the Rik Medlik building. There is ramp access
+    to this lecture theatre around the back of the building. However, this door is
+    typically locked from the outside, so we ask that you send us a <a href="https://m.me/surreyfilmsoc"
+    target="_blank">Facebook message</a> in advance so that we can make sure to let
+    you in. Accessibility information is available on the <a href="https://www.accessable.co.uk/venues/rik-medlik-building-block-ms#tab_11"
+    target="_blank">AccessAble website</a>.
