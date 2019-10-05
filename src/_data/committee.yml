@@ -1,12 +1,13 @@
+---
 president:
   name: Emily Nelson
-  image: /uploads/emily.jpg
+  image: "/uploads/emily.jpg"
 vice-president:
   name: Cary Serradas
-  image: /uploads/cary.jpg
+  image: "/uploads/cary.jpg"
 treasurer:
   name: Juan Snyman
-  image: /uploads/juan.jpg
+  image: "/uploads/juan.jpg"
 social-secretary:
   name: Nikash Gurung
-  image: /uploads/nikash.jpg
+  image: "/uploads/nikash.jpg"

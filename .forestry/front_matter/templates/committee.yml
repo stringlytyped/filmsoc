@@ -50,3 +50,5 @@ fields:
   - type: file
     name: image
     label: Image
+pages:
+- src/_data/committee.yml
