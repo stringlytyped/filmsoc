@@ -15,6 +15,7 @@ fields:
     display_utc: true
     date_format: YYYY-MM-DD
     required: true
+    time_format: h:mm A ZZ
 - type: text
   name: location
   label: Location
