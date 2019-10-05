@@ -20,7 +20,7 @@ file_template: ":filename:"
 build:
   preview_env:
   - JEKYLL_ENV=staging
-  preview_output_directory: _site
+  preview_output_directory: public
   install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
