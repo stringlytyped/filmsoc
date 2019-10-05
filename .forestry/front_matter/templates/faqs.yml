@@ -1,0 +1,14 @@
+---
+label: FAQs
+hide_body: true
+fields:
+- type: field_group_list
+  name: Faqs
+  label: Faqs
+  fields:
+  - type: text
+    name: question
+    label: question
+  - type: textarea
+    name: answer
+    label: answer
