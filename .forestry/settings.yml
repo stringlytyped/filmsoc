@@ -12,6 +12,8 @@ sections:
   label: Screenings
   create: all
   match: "**/*"
+  templates:
+  - film-screening
 upload_dir: src/uploads
 public_path: "/uploads"
 front_matter_path: ''
