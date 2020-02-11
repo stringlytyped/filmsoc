@@ -20,6 +20,5 @@ cast:
 - Takeshi Kaneshiro
 - Andy Lau
 - Zhang Ziyi
-published: false
 
 ---
