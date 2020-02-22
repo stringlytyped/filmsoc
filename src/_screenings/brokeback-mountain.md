@@ -1,0 +1,24 @@
+---
+layout: screening
+location: 03 MS 01
+date: 2020-02-23 19:30:00 +0000
+title: Brokeback Mountain
+year: 2005
+runtime: 2h 14m
+backdrop: "/uploads/brokeback_bd.jpg"
+poster: "/uploads/brokeback_poster.jpg"
+trailer: https://www.youtube.com/watch?v=sCytaMge7bY
+overview: Two modern-day cowboys meet on a shepherding job in the summer of '63, the
+  two share a raw and powerful summer together that turns into a lifelong relationship
+  conflicting with the lives they are supposed to live.
+genres:
+- Drama
+- Romance
+director: Ang Lee
+cast:
+- Heath Ledger
+- Jake Gyllenhaal
+- Michelle Williams
+published: false
+
+---
